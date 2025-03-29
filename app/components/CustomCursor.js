@@ -27,7 +27,7 @@ const CustomCursor = () => {
 
     window.addEventListener("mousemove", moveCursor);
     return () => window.removeEventListener("mousemove", moveCursor);
-  }, []);
+  }, [cursorX, cursorY]);
 
   useEffect(() => {
     const handleMouseEnter = () => setHovered(true);

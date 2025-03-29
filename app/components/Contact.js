@@ -52,7 +52,7 @@ const Contact = () => {
           {/* Left Column - Contact Info & Social Links */}
           <div className="p-6 rounded-lg shadow-lg ">
             <h3 className="text-2xl font-semibold text-[var(--highlight-color)] mb-4">Link Up? Let&apos; roll!</h3>
-            <p className="text-lg my-2">Have a project in mind or just want to chat? I'm all in! Whether it’s web development, design, or just a casual conversation, let’s connect and make something awesome together! </p>
+            <p className="text-lg my-2">Have a project in mind or just want to chat? I&apos;m all in! Whether it&apos;s web development, design, or just a casual conversation, let&apos;s connect and make something awesome together! </p>
             {/* Contact Info */}
             <div className="space-y-4 text-lg">
               <div className="flex items-center space-x-3">
