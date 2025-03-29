@@ -19,13 +19,13 @@ const educationData = [
     description: "Focused on Mathematics, Computer Science, and Programming.",
   },
 ];
-    const resumeUrl = "/resume.pdf"; // Ensure this file exists in your `public/` directory
-    const link = document.createElement("a");
-    link.href = resumeUrl;
-    link.download = "Anik_Tiwary_Resume.pdf"; // Set custom file name
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // const resumeUrl = "/resume.pdf"; // Ensure this file exists in your `public/` directory
+    // const link = document.createElement("a");
+    // link.href = resumeUrl;
+    // link.download = "Anik_Tiwary_Resume.pdf"; // Set custom file name
+    // document.body.appendChild(link);
+    // link.click();
+    // document.body.removeChild(link);
 
 
 const About = () => {

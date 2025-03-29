@@ -108,6 +108,8 @@ const Projects = () => {
             >
               {/* Project Image */}
               <Image
+                width={500}
+                height={300}
                 src={project.image}
                 alt={project.title}
                 className="rounded-lg mb-4 w-full h-48 object-cover"
