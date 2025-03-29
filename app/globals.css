@@ -1,26 +1,41 @@
 @import "tailwindcss";
 
+/* Default (Light Mode) */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background-color: #F9F7F3;
+  --text-color: #1E1010;
+  --highlight-color: #DC143C; 
+  --accent-color: #005F5F ; 
+  --random-color: #892b2b;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Dark Mode */
+.dark {
+  --background-color: #0D172B;
+  --text-color: white;
+  --highlight-color: #66d9ed; 
+  --accent-color: #c54c27; 
+  --random-color: #4591b5; 
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Apply the colors */
+html {
+  @apply transition-colors duration-300;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+ 
+@keyframes moveArrow {
+  0% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(5px); opacity: 0.7; }
+  100% { transform: translateY(0); opacity: 1; }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-moveArrow {
+  animation: moveArrow 1s infinite ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px; /* Prevents cutting off content when scrolling up */
 }
