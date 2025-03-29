@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { BsSunFill, BsMoonFill } from "react-icons/bs";
 
 const ToggleButton = () => {
-  const [darkMode, setDarkMode] = useState(false); // Default mode
+  const [darkMode, setDarkMode] = useState(true); // Default mode
 
   useEffect(() => {
     // Run only on the client
