@@ -103,7 +103,7 @@ const About = () => {
 
                   {/* Card Content */}
                   <div className="p-4 rounded-lg shadow-lg  text-left ">
-                    <h3 className="text-xl font-semibold text-[var(--accent-color)]">{item.degree}</h3>
+                    <h3 className="text-xl font-semibold text-[var(--highlight-color)]">{item.degree}</h3>
                     <div className="flex items-center justify-between">
                       <h4 className="text-md font-medium">{item.institution}</h4>
                       <span className="text-sm text-gray-500 font-semibold mt-2 block">{item.year}</span>
@@ -116,7 +116,7 @@ const About = () => {
           </div>
             
         </div>
-        <button className="mt-4 relative overflow-hidden px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 hover:scale-105 group">
+        <button className="mt-4 relative overflow-hidden px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 hover:scale-105 group" onClick={() => window.open("/Anik's Resume.pdf", "_blank")}>
           {/* Background Layer for Animated Transition */}
           <span className="absolute inset-0 bg-[var(--highlight-color)] transition-all duration-500 group-hover:-translate-x-full"></span>
           <span className="absolute inset-0 bg-[var(--background-color)] translate-x-full transition-all duration-500 group-hover:translate-x-0"></span>

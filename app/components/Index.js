@@ -24,6 +24,7 @@ const Index = () => {
       });
     }
   };
+
   const scrollToContact = () => {
     const contactSection = document.getElementById("contact");
     if (contactSection) {
@@ -32,7 +33,7 @@ const Index = () => {
         behavior: "smooth",
       });
     }
-  }
+  };
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-center min-h-screen px-6 md:px-16 relative">
@@ -76,7 +77,6 @@ const Index = () => {
             <span className="absolute inset-0 bg-[var(--background-color)] translate-y-full transition-all duration-500 group-hover:translate-y-0"></span>
 
             {/* Icon & Text */}
-            
             <span className="relative flex items-center text-[var(--text2-color)] dark:text-[var(--text-color)]">
               <IoMdChatbubbles className="inline-block mr-2 size-7" />
               Let&apos;s Connect!
@@ -86,7 +86,7 @@ const Index = () => {
       </div>
 
       {/* Right Side - Profile Image */}
-      <div className="mt-10 md:mt-0 md:ml-16">
+      <div className="mt-10 md:mt-0 md:ml-16 flex justify-center">
         <Image
           src="/anik-photo.png"
           alt="Anik Tiwary"
@@ -97,13 +97,15 @@ const Index = () => {
       </div>
 
       {/* Scroll Down Button (Fixed for Mobile) */}
+      <div className="mt-12">
       <button
         onClick={scrollToNextSection}
-        className="absolute bottom-6 md:bottom-10 left-1/2 transform -translate-x-1/2 flex items-center justify-center w-12 h-12 md:w-14 md:h-14 border-2 border-white rounded-full transition-all duration-300 hover:border-[var(--highlight-color)] hover:shadow-lg"
+        className="absolute bottom-6 md:mt-6 md:bottom-10 left-1/2 transform -translate-x-1/2 flex items-center justify-center w-12 h-12 md:w-14 md:h-14 border-2 border-white rounded-full transition-all duration-300 hover:border-[var(--highlight-color)] hover:shadow-lg"
       >
         {/* Animated Arrow */}
         <FaArrowDownLong className="text-[var(--accent-color)] text-2xl md:text-3xl animate-bounce" />
       </button>
+      </div>
     </div>
   );
 };

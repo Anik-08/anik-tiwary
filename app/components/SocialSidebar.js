@@ -7,13 +7,13 @@ const socialLinks = [
   { name: "GitHub", icon: <FaGithub />, url: "https://github.com/Anik-08", color: "#333" }, // Dark Gray
   { name: "LinkedIn", icon: <FaLinkedin />, url: "https://www.linkedin.com/in/anik-tiwary/", color: "#0077B5" }, // LinkedIn Blue
   { name: "Instagram", icon: <FaInstagram />, url: "https://www.instagram.com/anik_tiwary08/", color: "#E1306C" }, // Instagram Pink
-  { name: "Twitter", icon: <FaXTwitter />, url: "https://twitter.com/yourusername", color: "#333" }, // Twitter Blue
+  { name: "Twitter", icon: <FaXTwitter />, url: "https://twitter.com/yourusername", color: "#1DA1F2" }, // Twitter Blue
   { name: "Discord", icon: <FaDiscord />, url: "https://discord.gg/yourserver", color: "#7289DA" }, // Discord Blue
 ];
 
 const SocialSidebar = () => {
   return (
-    <div className="fixed  bottom-5 right-5 md:right-5 m-4 flex flex-row md:flex-col md:justify-center items-center space-x-4 md:space-x-0 md:space-y-4 z-50">
+    <div className="fixed bottom-5 right-5 flex flex-col items-center space-y-4 p-3 bg-transparent bg-opacity-90 rounded-xl z-50">
       {socialLinks.map((link, index) => (
         <a
           key={index}
