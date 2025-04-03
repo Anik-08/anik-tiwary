@@ -40,10 +40,10 @@ const Contact = () => {
         viewport={{ amount: 0.5 }}
       >
         <h2 className="text-4xl font-bold text-center mb-6">
-          Contact <span className="text-[var(--highlight-color)]">Me</span>
+        <span className="bg-gradient-to-r bg-clip-text text-transparent from-[var(--text-color)] to-[var(--highlight-color)]">Contact</span> Me
         </h2>
         <p className="text-lg text-gray-400 text-center mb-12">
-          Let’s connect! Reach out via social media or drop a message using the form.
+          Let&apos;s connect! Reach out via social media or drop a message using the form.
         </p>
 
         {/* Two-Column Layout */}

@@ -82,7 +82,7 @@ const Projects = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, type: "spring", stiffness: 100 }}
         >
-          My <span className="text-[var(--highlight-color)]">Projects</span>
+          My <span className="bg-gradient-to-r bg-clip-text text-transparent from-[var(--text-color)] to-[var(--highlight-color)]">Projects</span>
         </motion.h2>
         <p className="text-lg text-gray-400 mb-12">
           A showcase of my work in Web Development, App Development, and AI/ML.

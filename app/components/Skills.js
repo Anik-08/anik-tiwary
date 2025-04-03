@@ -93,7 +93,7 @@ const Skills = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, type: "spring", stiffness: 100 }}
         >
-          My <span className="text-[var(--highlight-color)]">Expertise</span>
+          My <span className="bg-gradient-to-r bg-clip-text text-transparent from-[var(--text-color)] to-[var(--highlight-color)]">Expertise</span>
         </motion.h2>
         <p className="text-lg text-gray-400 mb-12">
           A combination of technical expertise and problem-solving abilities that drive my development process.
@@ -108,7 +108,7 @@ const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, type: "spring", stiffness: 80  }} // Slight stagger effect
               viewport={{ once: false, amount: 0.5 }}
-              className="p-8 border-2 border-[var(--highlight-color)] rounded-lg shadow-lg transition-transform"
+              className="p-8 rounded-lg shadow-lg transition-transform"
             >
               <div className="text-5xl text-[var(--highlight-color)] mb-4 flex justify-center">
                 {skill.icon}
