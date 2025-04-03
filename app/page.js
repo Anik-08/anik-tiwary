@@ -19,9 +19,9 @@ export default function Home() {
       <Navbar />
 
       {/* Floating Random Motion Element (Background) */}
-      <div className="absolute -z-10 inset-0">
+      {/* <div className="absolute -z-10 inset-0 min-h-full">
         <RandomMotion />
-      </div>
+      </div> */}
 
       {/* Hero Section */}
       <section id="home" className="min-h-screen flex items-center justify-center">
