@@ -42,15 +42,15 @@ const projectsData = [
   //   repo: "https://github.com/anik-weather-app",
   //   tools: ["React Native", "OpenWeather API", "Expo"],
   // },
-  // {
-  //   title: "Chatbot with Gemini",
-  //   category: "AI/ML",
-  //   description: "A conversational AI chatbot integrated with Google's Gemini API.",
-  //   image: "/projects/chatbot.png",
-  //   link: "https://anik-chatbot.com",
-  //   repo: "https://github.com/anik-chatbot",
-  //   tools: ["Gemini API", "Python", "Flask"],
-  // },
+  {
+    title: "Chatbot with Gemini",
+    category: "AI/ML",
+    description: "A conversational AI chatbot integrated with Google's Gemini API.",
+    image: "/projects/chatbot.png",
+    link: "https://chatbot-m03u.onrender.com/",
+    repo: "https://github.com/Anik-08/Chatbot",
+    tools: ["Gemini API", "Python", "Django"],
+  },
   {
     title: "Task Manager - TickIT",
     category: "Web Dev",
@@ -62,7 +62,7 @@ const projectsData = [
   },
 ];
 
-const categories = ["All", "Web Dev"];
+const categories = ["All", "Web Dev", "AI/ML"];
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState("All");
