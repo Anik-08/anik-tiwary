@@ -24,15 +24,6 @@ const projectsData = [
     repo: "https://github.com/Anik-08/Musify",
     tools: ["Next JS", "Mongo DB", "Clerk"],
   },
-  {
-    title: "MLSA CIT",
-    category: "Web Dev",
-    description: "A club website for MLSA CIT, built with Next.js and Tailwind.",
-    image: "/projects/mlsacit.png",
-    link: "https://www.mlsacit.in/",
-    repo: "https://github.com/mlsacit/mlsacit",
-    tools: ["Next JS", "Tailwind CSS"],
-  },
   // {
   //   title: "AI Image Classifier",
   //   category: "AI/ML",
