@@ -7,8 +7,7 @@ const socialLinks = [
   { name: "GitHub", icon: <FaGithub />, url: "https://github.com/Anik-08", color: "#333" }, // Dark Gray
   { name: "LinkedIn", icon: <FaLinkedin />, url: "https://www.linkedin.com/in/anik-tiwary/", color: "#0077B5" }, // LinkedIn Blue
   { name: "Instagram", icon: <FaInstagram />, url: "https://www.instagram.com/anik_tiwary08/", color: "#E1306C" }, // Instagram Pink
-  { name: "Twitter", icon: <FaXTwitter />, url: "https://twitter.com/yourusername", color: "#1DA1F2" }, // Twitter Blue
-  { name: "Discord", icon: <FaDiscord />, url: "https://discord.gg/yourserver", color: "#7289DA" }, // Discord Blue
+
 ];
 
 const SocialSidebar = () => {

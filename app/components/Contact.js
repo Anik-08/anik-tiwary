@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { IoIosSend } from "react-icons/io";
 import { motion } from "framer-motion";
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
 
 const Contact = () => {
   const [result, setResult] = useState("");
@@ -90,6 +93,50 @@ const Contact = () => {
                 <span>+91 8618520069</span>
               </motion.div>
             </div>
+            {/* Social Links */}
+            <div className="mt-6 flex flex-wrap gap-4">
+              <a
+                href="https://www.linkedin.com/in/anik-tiwary/" // 🔁 your actual link here
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[var(--highlight-color)] transition-colors"
+              >
+                <FaLinkedin className="text-white text-2xl" />
+              </a>
+              <a
+                href="https://github.com/Anik-08"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[var(--highlight-color)] transition-colors"
+              >
+                <FaGithub className="text-white text-2xl" />
+              </a>
+              <a
+                href="https://x.com/AnikTiwary08?t=dVVvvSgdTS0_7xXI__9hgw&s=09"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[var(--highlight-color)] transition-colors"
+              >
+                <FaXTwitter className="text-white text-2xl" />
+              </a>
+              <a
+                href="https://www.instagram.com/anik_tiwary08/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[var(--highlight-color)] transition-colors"
+              >
+                <FaInstagram className="text-white text-2xl" />
+              </a>
+              <a
+                href="https://leetcode.com/u/Anik_Tiwary/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[var(--highlight-color)] transition-colors"
+              >
+                <SiLeetcode className="text-white text-2xl" />
+              </a>
+            </div>
+
           </motion.div>
 
           {/* Right Column - Contact Form */}

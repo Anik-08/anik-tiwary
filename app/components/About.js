@@ -124,7 +124,7 @@ const About = () => {
                   viewport={{ once: false }}
                   className="mb-6 ml-6"
                 >
-                  <div className="absolute w-4 h-4 bg-[var(--highlight-color)] rounded-full left-[-10px]"></div>
+
                   <div className="p-4 rounded-lg shadow-lg text-left">
                     <h3 className="text-xl font-semibold bg-gradient-to-r bg-clip-text text-transparent from-[var(--text-color)] via-[var(--random-color)] to-[var(--highlight-color)]">{item.degree}</h3>
                     <div className="flex items-center justify-between">
